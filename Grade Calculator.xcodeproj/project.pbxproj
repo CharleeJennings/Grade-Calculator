@@ -15,6 +15,7 @@
 		D30079131F041130000A63C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30079111F041130000A63C0 /* LaunchScreen.storyboard */; };
 		D300791E1F041130000A63C0 /* Grade_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300791D1F041130000A63C0 /* Grade_CalculatorTests.swift */; };
 		D30079291F041130000A63C0 /* Grade_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30079281F041130000A63C0 /* Grade_CalculatorUITests.swift */; };
+		D39638771F18452800C3EA2C /* Calculator_board.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39638761F18452800C3EA2C /* Calculator_board.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D30079241F041130000A63C0 /* Grade CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Grade CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D30079281F041130000A63C0 /* Grade_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade_CalculatorUITests.swift; sourceTree = "<group>"; };
 		D300792A1F041130000A63C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D39638761F18452800C3EA2C /* Calculator_board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator_board.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				D30079051F041130000A63C0 /* AppDelegate.swift */,
 				D30079071F041130000A63C0 /* ViewController.swift */,
+				D39638761F18452800C3EA2C /* Calculator_board.swift */,
 				D30079091F041130000A63C0 /* Main.storyboard */,
 				D300790F1F041130000A63C0 /* Assets.xcassets */,
 				D30079111F041130000A63C0 /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D30079081F041130000A63C0 /* ViewController.swift in Sources */,
+				D39638771F18452800C3EA2C /* Calculator_board.swift in Sources */,
 				D300790E1F041130000A63C0 /* Grade_Calculator.xcdatamodeld in Sources */,
 				D30079061F041130000A63C0 /* AppDelegate.swift in Sources */,
 			);
@@ -511,6 +515,7 @@
 				D300792F1F041130000A63C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D30079301F041130000A63C0 /* Build configuration list for PBXNativeTarget "Grade CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +524,7 @@
 				D30079321F041130000A63C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D30079331F041130000A63C0 /* Build configuration list for PBXNativeTarget "Grade CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +533,7 @@
 				D30079351F041130000A63C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
