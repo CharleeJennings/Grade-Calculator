@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Grade Calculator.xcodeproj">
+      location = "group:../Grade Calculator/Subject">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

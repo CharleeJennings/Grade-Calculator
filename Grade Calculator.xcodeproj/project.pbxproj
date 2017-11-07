@@ -15,10 +15,10 @@
 		D300791E1F041130000A63C0 /* Grade_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300791D1F041130000A63C0 /* Grade_CalculatorTests.swift */; };
 		D30079291F041130000A63C0 /* Grade_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30079281F041130000A63C0 /* Grade_CalculatorUITests.swift */; };
 		D30B19CD1FAA155800117845 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B19CC1FAA155800117845 /* Grade.swift */; };
-		D30B19CF1FAA161B00117845 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B19CE1FAA161B00117845 /* Subject.swift */; };
-		D3D559F01FAD0593005C51F1 /* SubjectTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D559EF1FAD0593005C51F1 /* SubjectTableView.swift */; };
-		D3D559F41FB12E8B005C51F1 /* SubjectCellUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D559F31FB12E8B005C51F1 /* SubjectCellUI.swift */; };
-		D3D559F61FB14BDD005C51F1 /* newSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D559F51FB14BDD005C51F1 /* newSubject.swift */; };
+		D3D559FE1FB240E8005C51F1 /* SubjectCellUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D559FA1FB240E8005C51F1 /* SubjectCellUI.swift */; };
+		D3D559FF1FB240E8005C51F1 /* SubjectTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D559FB1FB240E8005C51F1 /* SubjectTableView.swift */; };
+		D3D55A001FB240E8005C51F1 /* addSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D559FC1FB240E8005C51F1 /* addSubject.swift */; };
+		D3D55A011FB240E8005C51F1 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D559FD1FB240E8005C51F1 /* Subject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +53,10 @@
 		D30079281F041130000A63C0 /* Grade_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade_CalculatorUITests.swift; sourceTree = "<group>"; };
 		D300792A1F041130000A63C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D30B19CC1FAA155800117845 /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
-		D30B19CE1FAA161B00117845 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
-		D3D559EF1FAD0593005C51F1 /* SubjectTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableView.swift; sourceTree = "<group>"; };
-		D3D559F31FB12E8B005C51F1 /* SubjectCellUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectCellUI.swift; sourceTree = "<group>"; };
-		D3D559F51FB14BDD005C51F1 /* newSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newSubject.swift; sourceTree = "<group>"; };
+		D3D559FA1FB240E8005C51F1 /* SubjectCellUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectCellUI.swift; sourceTree = "<group>"; };
+		D3D559FB1FB240E8005C51F1 /* SubjectTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectTableView.swift; sourceTree = "<group>"; };
+		D3D559FC1FB240E8005C51F1 /* addSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addSubject.swift; sourceTree = "<group>"; };
+		D3D559FD1FB240E8005C51F1 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +109,7 @@
 			children = (
 				D30079051F041130000A63C0 /* AppDelegate.swift */,
 				D30B19CC1FAA155800117845 /* Grade.swift */,
-				D30B19CE1FAA161B00117845 /* Subject.swift */,
-				D3D559F51FB14BDD005C51F1 /* newSubject.swift */,
-				D3D559F31FB12E8B005C51F1 /* SubjectCellUI.swift */,
-				D3D559EF1FAD0593005C51F1 /* SubjectTableView.swift */,
+				D3D559F81FB23E5A005C51F1 /* Subject */,
 				D30079091F041130000A63C0 /* Main.storyboard */,
 				D300790F1F041130000A63C0 /* Assets.xcassets */,
 				D30079111F041130000A63C0 /* LaunchScreen.storyboard */,
@@ -138,6 +135,17 @@
 				D300792A1F041130000A63C0 /* Info.plist */,
 			);
 			path = "Grade CalculatorUITests";
+			sourceTree = "<group>";
+		};
+		D3D559F81FB23E5A005C51F1 /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+				D3D559FD1FB240E8005C51F1 /* Subject.swift */,
+				D3D559FA1FB240E8005C51F1 /* SubjectCellUI.swift */,
+				D3D559FC1FB240E8005C51F1 /* addSubject.swift */,
+				D3D559FB1FB240E8005C51F1 /* SubjectTableView.swift */,
+			);
+			path = Subject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,13 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3D559F01FAD0593005C51F1 /* SubjectTableView.swift in Sources */,
+				D3D55A001FB240E8005C51F1 /* addSubject.swift in Sources */,
+				D3D559FE1FB240E8005C51F1 /* SubjectCellUI.swift in Sources */,
+				D3D55A011FB240E8005C51F1 /* Subject.swift in Sources */,
+				D3D559FF1FB240E8005C51F1 /* SubjectTableView.swift in Sources */,
 				D300790E1F041130000A63C0 /* Grade_Calculator.xcdatamodeld in Sources */,
 				D30B19CD1FAA155800117845 /* Grade.swift in Sources */,
-				D30B19CF1FAA161B00117845 /* Subject.swift in Sources */,
-				D3D559F41FB12E8B005C51F1 /* SubjectCellUI.swift in Sources */,
 				D30079061F041130000A63C0 /* AppDelegate.swift in Sources */,
-				D3D559F61FB14BDD005C51F1 /* newSubject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
