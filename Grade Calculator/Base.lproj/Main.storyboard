@@ -58,11 +58,11 @@
             </objects>
             <point key="canvasLocation" x="14" y="139"/>
         </scene>
-        <!--Main Subject-->
+        <!--Subject Table View-->
         <scene sceneID="Z4B-Yn-kKG">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaL-r6-OF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="ofc-fg-kMJ" customClass="Main_Subject" customModule="Grade_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ofc-fg-kMJ" customClass="SubjectTableView" customModule="Grade_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yta-Vl-cJq"/>
                         <viewControllerLayoutGuide type="bottom" id="kNP-yE-HF2"/>
@@ -109,7 +109,7 @@
                     <navigationItem key="navigationItem" id="Sai-fv-vBX">
                         <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="vyk-OY-zRU">
                             <connections>
-                                <segue destination="USX-R4-rOQ" kind="show" id="VUK-L0-cPE"/>
+                                <segue destination="USX-R4-rOQ" kind="show" identifier="toAddSubject" id="t9D-Tb-XQT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="2500" y="-189.3553223388306"/>
         </scene>
-        <!--Subject View-->
+        <!--Add Subject-->
         <scene sceneID="WXt-zk-LFv">
             <objects>
-                <viewController id="USX-R4-rOQ" customClass="SubjectView" customModule="Grade_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="USX-R4-rOQ" customClass="addSubject" customModule="Grade_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hPY-wF-akt"/>
                         <viewControllerLayoutGuide type="bottom" id="ZyV-5N-z2w"/>
@@ -135,16 +135,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUa-5O-tBU">
-                                        <rect key="frame" x="164" y="471" width="46" height="30"/>
+                                        <rect key="frame" x="164" y="384" width="46" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="submitSubject:" destination="USX-R4-rOQ" eventType="touchUpInside" id="SeE-9S-9Jr"/>
-                                            <segue destination="ofc-fg-kMJ" kind="custom" identifier="backtoSubject" id="4qJ-Pc-v6J"/>
+                                            <action selector="submitSubject:" destination="USX-R4-rOQ" eventType="touchUpInside" id="pDL-0H-wf7"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pzt-nK-AvM">
-                                        <rect key="frame" x="126" y="159" width="97" height="30"/>
+                                        <rect key="frame" x="139" y="158" width="97" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -157,12 +156,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
-                        <outlet property="userInput_Name" destination="pzt-nK-AvM" id="Zry-Xc-Sjo"/>
+                        <outlet property="userInput_Name" destination="pzt-nK-AvM" id="g7Z-4Q-TGt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IPR-EW-a1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3282.4000000000001" y="-191.1544227886057"/>
+            <point key="canvasLocation" x="3374" y="-189"/>
         </scene>
         <!--Item-->
         <scene sceneID="pfT-um-K32">
@@ -222,7 +221,4 @@
             <point key="canvasLocation" x="1708" y="-189"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="4qJ-Pc-v6J"/>
-    </inferredMetricsTieBreakers>
 </document>
