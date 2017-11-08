@@ -9,43 +9,65 @@
 
 import UIKit
 
-class SubjectTableView: UIViewController, UITableViewDelegate, UITableViewDataSource
+class SubjectTableView:  UIViewController , UITableViewDelegate, UITableViewDataSource ,SubjectTansferable
 {
+    @IBOutlet weak var tableView: UITableView!
     var SubjectList = [Subject]()
     var cellidentifier = "Subject"
     
+
     
+    func addtoList( object : Subject )
+    {
+        SubjectList.append(object)
+    }
     
+    override func viewDidAppear(_ animated: Bool)
+    {
+        super.viewDidLoad()
+        tableView.reloadData()
+    }
     
     override func viewDidLoad()
     {
-   
+       
        super.viewDidLoad()
-        super.reloadInputViews()
-        
+       
         
     }
-    override func didReceiveMemoryWarning() {
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "toAddSubject"
+        {
+            let addSubject : addSubject = segue.destination as! addSubject
+            addSubject.delegate = self
+        }
+    }
+    
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
        
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int
+   func numberOfSections(in tableView: UITableView) -> Int
     {
         return 1
     }
     
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return SubjectList.count
     }
     
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellidentifier, for: indexPath) as! SubjectCell
-        cell.name.text = SubjectList[indexPath.row].getName()
+        cell.name.text =  SubjectList[indexPath.row].getName()//list[indexPath.row]
         return cell
     }
   

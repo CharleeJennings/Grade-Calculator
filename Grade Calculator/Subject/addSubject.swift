@@ -11,7 +11,10 @@ import UIKit
 
 class addSubject : UIViewController
 {
-    var temp = Subject()
+ 
+ 
+    var temp  = Subject()
+    var delegate : SubjectTansferable?
     
     @IBOutlet weak var userInput_Name: UITextField!
  
@@ -21,10 +24,9 @@ class addSubject : UIViewController
     {
         
         temp.setName(name: userInput_Name.text!)
-        let controller = SubjectTableView()
-        controller.SubjectList.append(temp)
+        delegate?.addtoList(object : temp)
         
-        
+        self.navigationController?.popViewController(animated: true)
  
     }
 

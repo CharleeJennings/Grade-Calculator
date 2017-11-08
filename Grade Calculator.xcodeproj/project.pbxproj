@@ -19,6 +19,7 @@
 		D3D559FF1FB240E8005C51F1 /* SubjectTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D559FB1FB240E8005C51F1 /* SubjectTableView.swift */; };
 		D3D55A001FB240E8005C51F1 /* addSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D559FC1FB240E8005C51F1 /* addSubject.swift */; };
 		D3D55A011FB240E8005C51F1 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D559FD1FB240E8005C51F1 /* Subject.swift */; };
+		D3D55A031FB28701005C51F1 /* Transferable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D55A021FB28701005C51F1 /* Transferable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		D3D559FB1FB240E8005C51F1 /* SubjectTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectTableView.swift; sourceTree = "<group>"; };
 		D3D559FC1FB240E8005C51F1 /* addSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addSubject.swift; sourceTree = "<group>"; };
 		D3D559FD1FB240E8005C51F1 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		D3D55A021FB28701005C51F1 /* Transferable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transferable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		D30079041F041130000A63C0 /* Grade Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				D3D55A021FB28701005C51F1 /* Transferable.swift */,
 				D30079051F041130000A63C0 /* AppDelegate.swift */,
 				D30B19CC1FAA155800117845 /* Grade.swift */,
 				D3D559F81FB23E5A005C51F1 /* Subject */,
@@ -288,6 +291,7 @@
 				D3D559FF1FB240E8005C51F1 /* SubjectTableView.swift in Sources */,
 				D300790E1F041130000A63C0 /* Grade_Calculator.xcdatamodeld in Sources */,
 				D30B19CD1FAA155800117845 /* Grade.swift in Sources */,
+				D3D55A031FB28701005C51F1 /* Transferable.swift in Sources */,
 				D30079061F041130000A63C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

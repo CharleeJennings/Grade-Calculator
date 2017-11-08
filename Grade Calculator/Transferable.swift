@@ -8,8 +8,6 @@
 import Foundation
 import UIKit
 protocol SubjectTansferable
-    
-
 {
-    
+    func addtoList (object : Subject) 
 }
