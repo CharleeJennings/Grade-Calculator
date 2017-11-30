@@ -14,6 +14,8 @@ class SubjectCell :  UITableViewCell
     
     @IBOutlet weak var name: UILabel!
     
+   
+    
   
     
     

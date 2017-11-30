@@ -17,21 +17,27 @@ class SubjectTableView:  UIViewController , UITableViewDelegate, UITableViewData
     
 
     
-    func addtoList( object : Subject )
+    func alterSubjectList( object : Subject )
     {
         SubjectList.append(object)
+    }
+    
+    func reload() 
+    {
+        tableView.reloadData()
     }
     
     override func viewDidAppear(_ animated: Bool)
     {
         super.viewDidLoad()
-        tableView.reloadData()
+    
     }
     
     override func viewDidLoad()
     {
        
-       super.viewDidLoad()
+        super.viewDidLoad()
+        self.navigationItem.title = "Subjects"
        
         
     }
@@ -57,6 +63,12 @@ class SubjectTableView:  UIViewController , UITableViewDelegate, UITableViewData
         return 1
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        
+        self.performSegue(withIdentifier: "toSubjectData" , sender: Any?.self)
+    }
+    
     
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -68,6 +80,7 @@ class SubjectTableView:  UIViewController , UITableViewDelegate, UITableViewData
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellidentifier, for: indexPath) as! SubjectCell
         cell.name.text =  SubjectList[indexPath.row].getName()//list[indexPath.row]
+        cell.contentView.backgroundColor = UIColor.clear
         return cell
     }
   

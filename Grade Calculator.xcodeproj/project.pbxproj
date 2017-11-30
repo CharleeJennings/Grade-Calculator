@@ -14,12 +14,16 @@
 		D30079131F041130000A63C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30079111F041130000A63C0 /* LaunchScreen.storyboard */; };
 		D300791E1F041130000A63C0 /* Grade_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D300791D1F041130000A63C0 /* Grade_CalculatorTests.swift */; };
 		D30079291F041130000A63C0 /* Grade_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30079281F041130000A63C0 /* Grade_CalculatorUITests.swift */; };
-		D30B19CD1FAA155800117845 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B19CC1FAA155800117845 /* Grade.swift */; };
+		D30B19CD1FAA155800117845 /* Assessments.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B19CC1FAA155800117845 /* Assessments.swift */; };
+		D34049401FCDE91F0049E6F0 /* Welcome View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D340493F1FCDE91F0049E6F0 /* Welcome View.swift */; };
 		D3D559FE1FB240E8005C51F1 /* SubjectCellUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D559FA1FB240E8005C51F1 /* SubjectCellUI.swift */; };
 		D3D559FF1FB240E8005C51F1 /* SubjectTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D559FB1FB240E8005C51F1 /* SubjectTableView.swift */; };
 		D3D55A001FB240E8005C51F1 /* addSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D559FC1FB240E8005C51F1 /* addSubject.swift */; };
 		D3D55A011FB240E8005C51F1 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D559FD1FB240E8005C51F1 /* Subject.swift */; };
 		D3D55A031FB28701005C51F1 /* Transferable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D55A021FB28701005C51F1 /* Transferable.swift */; };
+		D3E0B90A1FBF5D1400E6F8E0 /* BackgroundUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0B9091FBF5D1400E6F8E0 /* BackgroundUIView.swift */; };
+		D3E0B90F1FC61B1000E6F8E0 /* Backgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0B90E1FC61B1000E6F8E0 /* Backgrounds.swift */; };
+		D3E0B9111FC6501000E6F8E0 /* addAssessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E0B9101FC6501000E6F8E0 /* addAssessment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,12 +57,17 @@
 		D30079241F041130000A63C0 /* Grade CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Grade CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D30079281F041130000A63C0 /* Grade_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade_CalculatorUITests.swift; sourceTree = "<group>"; };
 		D300792A1F041130000A63C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D30B19CC1FAA155800117845 /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
+		D30B19CC1FAA155800117845 /* Assessments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assessments.swift; sourceTree = "<group>"; };
+		D340493F1FCDE91F0049E6F0 /* Welcome View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Welcome View.swift"; sourceTree = "<group>"; };
 		D3D559FA1FB240E8005C51F1 /* SubjectCellUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectCellUI.swift; sourceTree = "<group>"; };
 		D3D559FB1FB240E8005C51F1 /* SubjectTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectTableView.swift; sourceTree = "<group>"; };
 		D3D559FC1FB240E8005C51F1 /* addSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addSubject.swift; sourceTree = "<group>"; };
 		D3D559FD1FB240E8005C51F1 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		D3D55A021FB28701005C51F1 /* Transferable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transferable.swift; sourceTree = "<group>"; };
+		D3E0B9091FBF5D1400E6F8E0 /* BackgroundUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundUIView.swift; sourceTree = "<group>"; };
+		D3E0B90B1FC51C0200E6F8E0 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		D3E0B90E1FC61B1000E6F8E0 /* Backgrounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backgrounds.swift; sourceTree = "<group>"; };
+		D3E0B9101FC6501000E6F8E0 /* addAssessment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addAssessment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +118,14 @@
 		D30079041F041130000A63C0 /* Grade Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				D3E0B90B1FC51C0200E6F8E0 /* Raleway-Regular.ttf */,
+				D3E0B9091FBF5D1400E6F8E0 /* BackgroundUIView.swift */,
+				D340493F1FCDE91F0049E6F0 /* Welcome View.swift */,
+				D3E0B9061FBF493200E6F8E0 /* PaintCode */,
 				D3D55A021FB28701005C51F1 /* Transferable.swift */,
 				D30079051F041130000A63C0 /* AppDelegate.swift */,
-				D30B19CC1FAA155800117845 /* Grade.swift */,
+				D30B19CC1FAA155800117845 /* Assessments.swift */,
+				D3D559FA1FB240E8005C51F1 /* SubjectCellUI.swift */,
 				D3D559F81FB23E5A005C51F1 /* Subject */,
 				D30079091F041130000A63C0 /* Main.storyboard */,
 				D300790F1F041130000A63C0 /* Assets.xcassets */,
@@ -144,11 +158,19 @@
 			isa = PBXGroup;
 			children = (
 				D3D559FD1FB240E8005C51F1 /* Subject.swift */,
-				D3D559FA1FB240E8005C51F1 /* SubjectCellUI.swift */,
 				D3D559FC1FB240E8005C51F1 /* addSubject.swift */,
 				D3D559FB1FB240E8005C51F1 /* SubjectTableView.swift */,
+				D3E0B9101FC6501000E6F8E0 /* addAssessment.swift */,
 			);
 			path = Subject;
+			sourceTree = "<group>";
+		};
+		D3E0B9061FBF493200E6F8E0 /* PaintCode */ = {
+			isa = PBXGroup;
+			children = (
+				D3E0B90E1FC61B1000E6F8E0 /* Backgrounds.swift */,
+			);
+			path = PaintCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,11 +308,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3D55A001FB240E8005C51F1 /* addSubject.swift in Sources */,
+				D3E0B90F1FC61B1000E6F8E0 /* Backgrounds.swift in Sources */,
 				D3D559FE1FB240E8005C51F1 /* SubjectCellUI.swift in Sources */,
 				D3D55A011FB240E8005C51F1 /* Subject.swift in Sources */,
+				D3E0B9111FC6501000E6F8E0 /* addAssessment.swift in Sources */,
+				D34049401FCDE91F0049E6F0 /* Welcome View.swift in Sources */,
 				D3D559FF1FB240E8005C51F1 /* SubjectTableView.swift in Sources */,
 				D300790E1F041130000A63C0 /* Grade_Calculator.xcdatamodeld in Sources */,
-				D30B19CD1FAA155800117845 /* Grade.swift in Sources */,
+				D3E0B90A1FBF5D1400E6F8E0 /* BackgroundUIView.swift in Sources */,
+				D30B19CD1FAA155800117845 /* Assessments.swift in Sources */,
 				D3D55A031FB28701005C51F1 /* Transferable.swift in Sources */,
 				D30079061F041130000A63C0 /* AppDelegate.swift in Sources */,
 			);

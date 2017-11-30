@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class Grades
+class Asessments
 {
     var percentageOfTotalGrade : Double?
     var numOfGrades : Int?
@@ -19,12 +19,7 @@ class Grades
     var average : Double?
     var incr : Int = 0
     
-    func storeGrade ( cGrade : Double)
-    {
-        
-        
-    }
-    
+
     func setPercentage( percent : Int) -> Double
     {
         return Double(percent) * 0.01 

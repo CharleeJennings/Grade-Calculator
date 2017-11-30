@@ -7,7 +7,14 @@
 
 import Foundation
 import UIKit
+
+
 protocol SubjectTansferable
 {
-    func addtoList (object : Subject) 
+    var SubjectList : [Subject] { get set }
+    func alterSubjectList (object : Subject)
+    func reload()
+    
 }
+
+
