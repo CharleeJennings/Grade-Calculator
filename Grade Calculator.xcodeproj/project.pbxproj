@@ -16,6 +16,7 @@
 		D30079291F041130000A63C0 /* Grade_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30079281F041130000A63C0 /* Grade_CalculatorUITests.swift */; };
 		D30B19CD1FAA155800117845 /* Assessments.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B19CC1FAA155800117845 /* Assessments.swift */; };
 		D34049401FCDE91F0049E6F0 /* Welcome View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D340493F1FCDE91F0049E6F0 /* Welcome View.swift */; };
+		D34049421FD097F10049E6F0 /* Customer Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34049411FD097F10049E6F0 /* Customer Segue.swift */; };
 		D3D559FE1FB240E8005C51F1 /* SubjectCellUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D559FA1FB240E8005C51F1 /* SubjectCellUI.swift */; };
 		D3D559FF1FB240E8005C51F1 /* SubjectTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D559FB1FB240E8005C51F1 /* SubjectTableView.swift */; };
 		D3D55A001FB240E8005C51F1 /* addSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D559FC1FB240E8005C51F1 /* addSubject.swift */; };
@@ -59,6 +60,7 @@
 		D300792A1F041130000A63C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D30B19CC1FAA155800117845 /* Assessments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assessments.swift; sourceTree = "<group>"; };
 		D340493F1FCDE91F0049E6F0 /* Welcome View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Welcome View.swift"; sourceTree = "<group>"; };
+		D34049411FD097F10049E6F0 /* Customer Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer Segue.swift"; sourceTree = "<group>"; };
 		D3D559FA1FB240E8005C51F1 /* SubjectCellUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectCellUI.swift; sourceTree = "<group>"; };
 		D3D559FB1FB240E8005C51F1 /* SubjectTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectTableView.swift; sourceTree = "<group>"; };
 		D3D559FC1FB240E8005C51F1 /* addSubject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addSubject.swift; sourceTree = "<group>"; };
@@ -118,14 +120,13 @@
 		D30079041F041130000A63C0 /* Grade Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				D30079051F041130000A63C0 /* AppDelegate.swift */,
 				D3E0B90B1FC51C0200E6F8E0 /* Raleway-Regular.ttf */,
-				D3E0B9091FBF5D1400E6F8E0 /* BackgroundUIView.swift */,
-				D340493F1FCDE91F0049E6F0 /* Welcome View.swift */,
+				D38CE9B01FE98C2700E85162 /* Currently Working */,
 				D3E0B9061FBF493200E6F8E0 /* PaintCode */,
 				D3D55A021FB28701005C51F1 /* Transferable.swift */,
-				D30079051F041130000A63C0 /* AppDelegate.swift */,
 				D30B19CC1FAA155800117845 /* Assessments.swift */,
-				D3D559FA1FB240E8005C51F1 /* SubjectCellUI.swift */,
+				D3E0B9101FC6501000E6F8E0 /* addAssessment.swift */,
 				D3D559F81FB23E5A005C51F1 /* Subject */,
 				D30079091F041130000A63C0 /* Main.storyboard */,
 				D300790F1F041130000A63C0 /* Assets.xcassets */,
@@ -154,13 +155,23 @@
 			path = "Grade CalculatorUITests";
 			sourceTree = "<group>";
 		};
+		D38CE9B01FE98C2700E85162 /* Currently Working */ = {
+			isa = PBXGroup;
+			children = (
+				D340493F1FCDE91F0049E6F0 /* Welcome View.swift */,
+				D34049411FD097F10049E6F0 /* Customer Segue.swift */,
+				D3E0B9091FBF5D1400E6F8E0 /* BackgroundUIView.swift */,
+			);
+			path = "Currently Working";
+			sourceTree = "<group>";
+		};
 		D3D559F81FB23E5A005C51F1 /* Subject */ = {
 			isa = PBXGroup;
 			children = (
+				D3D559FA1FB240E8005C51F1 /* SubjectCellUI.swift */,
 				D3D559FD1FB240E8005C51F1 /* Subject.swift */,
 				D3D559FC1FB240E8005C51F1 /* addSubject.swift */,
 				D3D559FB1FB240E8005C51F1 /* SubjectTableView.swift */,
-				D3E0B9101FC6501000E6F8E0 /* addAssessment.swift */,
 			);
 			path = Subject;
 			sourceTree = "<group>";
@@ -308,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3D55A001FB240E8005C51F1 /* addSubject.swift in Sources */,
+				D34049421FD097F10049E6F0 /* Customer Segue.swift in Sources */,
 				D3E0B90F1FC61B1000E6F8E0 /* Backgrounds.swift in Sources */,
 				D3D559FE1FB240E8005C51F1 /* SubjectCellUI.swift in Sources */,
 				D3D55A011FB240E8005C51F1 /* Subject.swift in Sources */,

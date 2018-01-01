@@ -13,8 +13,8 @@ import UIKit
 @IBDesignable
 class background : UIView
 {
-    override func draw(_ rect: CGRect) {
-        
+    override func draw(_ rect: CGRect)
+    {
         Backgrounds.drawBackgroundCanvas()
     }
 }

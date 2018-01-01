@@ -10,14 +10,13 @@ import Foundation
 import UIKit
 
 
-class Asessments
+class Assessments
 {
-    var percentageOfTotalGrade : Double?
     var numOfGrades : Int?
     var gradesArray : [Double]?
     var cumPoints : Int?
     var average : Double?
-    var incr : Int = 0
+    var percentage : Double?
     
 
     func setPercentage( percent : Int) -> Double
@@ -26,7 +25,7 @@ class Asessments
     }
     func getPercentage ()-> Double
     {
-        return percentageOfTotalGrade!
+        return percentage!
     }
     func getAverage() -> Double
     {

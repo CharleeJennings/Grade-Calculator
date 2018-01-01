@@ -12,8 +12,9 @@ import UIKit
 protocol SubjectTansferable
 {
     var SubjectList : [Subject] { get set }
-    func alterSubjectList (object : Subject)
-    func reload()
+    func addSubjectList (object : Subject)
+    func replaceSubject(object : Subject , _ Index : Int)
+    
     
 }
 

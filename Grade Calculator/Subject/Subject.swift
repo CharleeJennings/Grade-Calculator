@@ -12,7 +12,7 @@ import UIKit
 class Subject
 {
     
-    var segmentArray = [Asessments]()
+    var segmentArray = [Assessments]()
     var nameOfSubject : String?
     var actualAverage : Double?
     

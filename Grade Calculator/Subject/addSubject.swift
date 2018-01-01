@@ -40,8 +40,7 @@ class addSubject : UIViewController
     {
        
         temp.setName(name: (userInput_Name?.text!)!)
-        delegate?.alterSubjectList(object : temp)
-        delegate?.reload()
+        delegate?.addSubjectList(object : temp)
         self.navigationController?.popViewController(animated: true)
 
     }

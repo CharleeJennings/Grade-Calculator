@@ -13,10 +13,6 @@ class SubjectCell :  UITableViewCell
 {
     
     @IBOutlet weak var name: UILabel!
-    
-   
-    
-  
-    
+    var isNew : Bool = true
     
 }

@@ -15,31 +15,52 @@ class SubjectTableView:  UIViewController , UITableViewDelegate, UITableViewData
     var SubjectList = [Subject]()
     var cellidentifier = "Subject"
     
-
-    
-    func alterSubjectList( object : Subject )
+    func numberOfSections(in tableView: UITableView) -> Int
     {
-        SubjectList.append(object)
+        return 1
     }
     
-    func reload() 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
+        
+        self.performSegue(withIdentifier: "toSubjectData" , sender: Any?.self)
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return SubjectList.count
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellidentifier, for: indexPath) as! SubjectCell
+        cell.name.text =  SubjectList[indexPath.row].getName()
+        cell.contentView.backgroundColor = UIColor.clear
+        return cell
+    }
+    
+    func addSubjectList( object : Subject )
+    {
+        SubjectList.append(object)
         tableView.reloadData()
+    }
+    
+    func replaceSubject( object : Subject, _ Index : Int)
+    {
+        SubjectList[Index] = object
     }
     
     override func viewDidAppear(_ animated: Bool)
     {
         super.viewDidLoad()
-    
     }
     
     override func viewDidLoad()
     {
-       
         super.viewDidLoad()
         self.navigationItem.title = "Subjects"
-       
-        
     }
     
     
@@ -55,33 +76,8 @@ class SubjectTableView:  UIViewController , UITableViewDelegate, UITableViewData
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
-       
     }
     
-   func numberOfSections(in tableView: UITableView) -> Int
-    {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
-    {
-        
-        self.performSegue(withIdentifier: "toSubjectData" , sender: Any?.self)
-    }
-    
-    
-   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
-        return SubjectList.count
-    }
-    
-    
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-    {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellidentifier, for: indexPath) as! SubjectCell
-        cell.name.text =  SubjectList[indexPath.row].getName()//list[indexPath.row]
-        cell.contentView.backgroundColor = UIColor.clear
-        return cell
-    }
+  
   
 }
